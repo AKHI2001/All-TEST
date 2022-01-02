@@ -1,0 +1,188 @@
+<html>
+    <body>
+        <title>placement form</title>
+    <h1><p align="center" text style="color:green">TO FILL PLACEMENT FORM</p></h1>
+    <form>
+      <table align="center" table border="8"width=30%%,lengh=40%%, table border ="color:green;">
+
+        <tr>
+            <td text style="color:red;">
+                <label for="uname"> enter your name</label>
+            </td>
+            <td>
+                <input type="text" id="uname" name="username">
+            </td>
+        </tr>
+        <tr>
+            <td text style="color:red;">
+                <label for="name">enter your father Name</label>
+            </td>
+            <td>
+                <input type="text" id="fname" name="username">
+            </td>
+        </tr>
+        <tr>
+            <td text style="color:red;">
+                <label for="uemail">Email</label>
+            </td>
+            <td>
+                <input type="text" id="uemail" name="usermail">
+                <button type="button">Check</button>
+            </td>
+        </tr>
+        <tr>
+            <td text style="color:red;">
+                <label for="age">Age</label>
+            </td>
+            <td>
+                <input type="text" name="userage" id="age" size="2" maxlength="2">
+            </td>
+        </tr>
+        <tr>
+            <td text style="color:red;">
+                <label for="mobil no">mobil no</label>
+            </td>
+            <td>
+                <input type="number" name="userage" id="mobile" size="10" maxlength="10">
+            </td>
+        </tr>
+        <tr>
+            <td text style="color:red;">
+                <label for="mobil no">addar card no</label>
+            </td>
+            <td>
+                <input type="number" name="userage" id="addar" size="15" maxlength="15">
+            </td>
+        </tr>
+        <tr>
+            <tr>
+                <td text style="color:red;">
+                    <label for="mobil no">enter your 10th marks</label>
+                </td>
+                <td>
+                    <input type="number" name="userage" id="10mrks" size="3" maxlength="3">
+                </td>
+            </tr>
+            <tr>
+                <td text style="color:red;">
+                    <label for="mobil no">enter your 12th marks</label>
+                </td>
+                <td>
+                    <input type="number" name="userage" id="12marks" size="3" maxlength="3">
+                </td>
+            </tr>
+            <tr>
+                <td text style="color:red;">
+                    <label for="mobil no">enter your graduation marks</label>
+                </td>
+                <td>
+                    <input type="number" name="userage" id="gmarks" size="3" maxlength="3">
+                </td>
+            </tr>
+            <td text style="color:red;">
+                <label>Country</label>
+            </td>
+            <td>
+                <input type="text" value="India" id="c"  name="country" disabled>
+            </td>
+        </tr>
+        <tr>
+            <td text style="color:red;" >
+                    <label for="pass">Password</label>
+            </td>
+            <td>
+                    <input type="password" id="pass">
+            </td>
+        </tr>
+        <tr>
+            <td text style="color:red;">
+                <label for="res">Resume</label>
+            </td>
+            <td text style="color:red;">
+                <input type="file" id="res">
+            </td>
+        </tr>
+        <tr>
+            <td text style="color:red;">
+                <label>Hobbies</label>
+            </td>
+            <td>
+                <label>
+                    <input type="checkbox" checked> Cricket
+                </label>
+                <label>
+                    <input type="checkbox"> Football
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td text style="color:red;">
+                <label>Gender</label>
+            </td>
+            <td text style="color:red;">
+                <label>
+                    <input type="radio" value="f" id="female" name="gender"> Female</label>
+                    <label>
+                    <input value="m" type="radio"id="male" name="gender"> Male</label>
+            </td>
+        </tr>
+        <tr>
+            <td text style="color:red;">
+                    <label for="city">City</label>
+            </td>
+            <td>
+                    <select id="city" name="city">
+                        <option disabled selected>--Choose City--</option>
+                            <optgroup label="Metros">
+                                <option>New Delhi</option>
+                                <option>Mumbai</option>
+                                <option>Channai</option>
+                                <option>Kolkata</option>
+                            </optgroup>
+                            <optgroup label="Others">
+                                <option>Noida</option>
+                                <option>Gurgram</option>
+                                <option>Faridabad</option>
+                                <option>Gaziabad</option>
+                            </optgroup>
+                    </select>
+            </td>
+        </tr>
+        <tr>
+            <td text style="color:red;">
+                <label>Address</label>
+            </td>
+            <td>
+                <textarea rows="4" id="address" cols="40"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td text style="color:red;">
+                <input type="submit" id="sub" background-color:red value="Submit">
+                <input type="reset"><br/><br/>
+                <label><input type="checkbox" unchecked>: I Agree</label>
+            </br>
+            <br/>
+                <h2><p text style="color:blue">BEST OF LUCK !</p></h2>
+            </td>
+        </tr> 
+         </table>
+    </form>
+    <script>
+        document.getElementById("sub").onclick = function(){
+        var myname = document.getElementById("uname").value;
+        console.log("Name: "+myname);
+        var email = document.getElementById("email").value;
+        console.log("Email: "+email);
+        var gender = document.getElementById("gender").value;
+        console.log("Gender: "+gender);
+        
+        var dateofbirth = document.getElementById("DOB").value;
+        console.log("Date of Birth: "+dateofbirth);
+        var password = document.getElementById("pass").value;
+        console.log("Password: ****");
+       }
+    </script>
+  </body> 
+</html> 
