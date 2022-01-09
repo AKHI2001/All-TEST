@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>google meet</title>
+    </head>
+<body class="lia-board lia-user-status-anonymous ForumTopicPage lia-body modal-open lia-media-size-md" id="lia-body" style="position: relative; min-height: 100%; top: 0px;"><div modal-render="true" tabindex="-1" role="dialog" class="modal fade lia-modal-window in" uib-modal-animation-class="fade" modal-in-class="in" ng-style="{'z-index': 1050 + index*10, display: 'block'}" uib-modal-window="modal-window" window-class="lia-modal-window" size="imagelightbox" index="0" animate="animate" modal-animation="true" style="z-index: 1050; display: block;">
+    <div class="modal-dialog modal-imagelightbox" ng-class="size ? 'modal-' + size : ''"><div class="modal-content" uib-modal-transclude=""><li:media-image-lightbox li-image="image" li-images="images" li-open-context="openContext" li-load-images="loadImages(limit, offset, context)" li-limit="limit" li-close="close()" li-event-context="eventContext"><!----><ng-include src="templateUrl()"><div class="lia-media-image-lightbox lia-content" ng-class="{'lia-show-controls': isForceShow}" ng-click="forceShow($event)" li-common-text-ready="'media'">
+  <div class="lia-lightbox-main-image" ng-swipe-left="next($event)" ng-swipe-right="prev($event)" style="height: 607px; min-height: 607px;">
+    <img class="lia-image lia-no-select" ng-src="https://www.localguidesconnect.com/t5/image/serverpage/image-id/960556iA2C0F00330B351D3/image-dimensions/1700?v=v2&amp;px=-1" li-common-text-ready="'media'" ng-attr-title="{{ 'li.media.image-lightbox.selected-image.title-text' | translate:{'title': image.title} }}" ng-attr-alt="{{ 'li.media.image-lightbox.selected-image.alt-text' | translate:{'alt': setAltText(image)} }}" li-common-img-load="hideLoader()" ng-show="!loader" src="https://www.localguidesconnect.com/t5/image/serverpage/image-id/960556iA2C0F00330B351D3/image-dimensions/1700?v=v2&amp;px=-1" title="1.jpg" alt="1.jpg">
+    <i class="lia-fa lia-fa-spinner lia-fa-spin lia-lightbox-image-loader ng-hide" ng-show="loader"></i>
+    <div class="lia-lightbox-actions-container lia-no-select lia-button-container">
+      <!----><i class="lia-fa lia-lightbox-button lia-lightbox-fullscreen-button lia-fa-expand" role="button" tabindex="0" aria-label="Fullscreen" li-enter-or-click="fullscreen()" ng-if="allowFullscreen" ng-class="'lia-fa-' + (isFullscreen() ? 'compress' : 'expand')"></i><!---->
+      <i class="lia-fa lia-fa-times lia-lightbox-button lia-lightbox-close-button" role="button" tabindex="0" aria-label="Close" li-enter-or-click="closeModal()"></i>
+    </div>
+    <div class="lia-lightbox-prev-container lia-no-select lia-button-container lia-button-disabled" li-enter-or-click="prev($event)" ng-class="{'lia-button-disabled': index === 0 }">
+      <i class="lia-fa lia-fa-chevron-left lia-lightbox-button" role="button" tabindex="0" aria-label="Previous Image" aria-disabled="true"></i>
+    </div>
+    <div class="lia-lightbox-next-container lia-no-select lia-button-container lia-button-disabled" li-enter-or-click="next($event)" ng-class="{'lia-button-disabled': index === images.length - 1 }">
+      <i class="lia-fa lia-fa-chevron-right lia-lightbox-button" role="button" tabindex="0" aria-label="Next Image" aria-disabled="true"></i>
+    </div>
+    <!---->
+  </div>
+
+  <div class="lia-lightbox-info-wrapper" ng-click="$event.stopPropagation()">
+  </body>  
+</html>  
